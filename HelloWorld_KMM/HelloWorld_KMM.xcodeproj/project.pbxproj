@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C291E3805AF929CF985A2B0 /* Pods_HelloWorld_KMM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89475FD148EED5E41235A7BB /* Pods_HelloWorld_KMM.framework */; };
+		FADEDE1F2869C11E0008EC43 /* HelloWorld_KMMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDE1E2869C11E0008EC43 /* HelloWorld_KMMApp.swift */; };
+		FADEDE212869C11E0008EC43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDE202869C11E0008EC43 /* ContentView.swift */; };
+		FADEDE232869C1200008EC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADEDE222869C1200008EC43 /* Assets.xcassets */; };
+		FADEDE262869C1200008EC43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADEDE252869C1200008EC43 /* Preview Assets.xcassets */; };
+		FADEDE2D286A17E50008EC43 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDE2C286A17E50008EC43 /* API.swift */; };
+		FADEDE2F286A1C670008EC43 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDE2E286A1C670008EC43 /* ContentViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5259F6B6D6E4B30E4246A889 /* Pods-HelloWorld_KMM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld_KMM.debug.xcconfig"; path = "Target Support Files/Pods-HelloWorld_KMM/Pods-HelloWorld_KMM.debug.xcconfig"; sourceTree = "<group>"; };
+		89475FD148EED5E41235A7BB /* Pods_HelloWorld_KMM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld_KMM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		910283872D84F654D10DA0F4 /* Pods-HelloWorld_KMM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld_KMM.release.xcconfig"; path = "Target Support Files/Pods-HelloWorld_KMM/Pods-HelloWorld_KMM.release.xcconfig"; sourceTree = "<group>"; };
+		FADEDE1B2869C11E0008EC43 /* HelloWorld_KMM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld_KMM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADEDE1E2869C11E0008EC43 /* HelloWorld_KMMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld_KMMApp.swift; sourceTree = "<group>"; };
+		FADEDE202869C11E0008EC43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FADEDE222869C1200008EC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FADEDE252869C1200008EC43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FADEDE2C286A17E50008EC43 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FADEDE2E286A1C670008EC43 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADEDE182869C11E0008EC43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C291E3805AF929CF985A2B0 /* Pods_HelloWorld_KMM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09F68DCCED671F7509D6ADC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5259F6B6D6E4B30E4246A889 /* Pods-HelloWorld_KMM.debug.xcconfig */,
+				910283872D84F654D10DA0F4 /* Pods-HelloWorld_KMM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F6111B76BC2CEB5E000A7788 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89475FD148EED5E41235A7BB /* Pods_HelloWorld_KMM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FADEDE122869C11E0008EC43 = {
+			isa = PBXGroup;
+			children = (
+				FADEDE1D2869C11E0008EC43 /* HelloWorld_KMM */,
+				FADEDE1C2869C11E0008EC43 /* Products */,
+				09F68DCCED671F7509D6ADC7 /* Pods */,
+				F6111B76BC2CEB5E000A7788 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FADEDE1C2869C11E0008EC43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADEDE1B2869C11E0008EC43 /* HelloWorld_KMM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADEDE1D2869C11E0008EC43 /* HelloWorld_KMM */ = {
+			isa = PBXGroup;
+			children = (
+				FADEDE1E2869C11E0008EC43 /* HelloWorld_KMMApp.swift */,
+				FADEDE202869C11E0008EC43 /* ContentView.swift */,
+				FADEDE2E286A1C670008EC43 /* ContentViewModel.swift */,
+				FADEDE2C286A17E50008EC43 /* API.swift */,
+				FADEDE222869C1200008EC43 /* Assets.xcassets */,
+				FADEDE242869C1200008EC43 /* Preview Content */,
+			);
+			path = HelloWorld_KMM;
+			sourceTree = "<group>";
+		};
+		FADEDE242869C1200008EC43 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FADEDE252869C1200008EC43 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FADEDE1A2869C11E0008EC43 /* HelloWorld_KMM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADEDE292869C1200008EC43 /* Build configuration list for PBXNativeTarget "HelloWorld_KMM" */;
+			buildPhases = (
+				B35CF3C841E9E7523B5AD68C /* [CP] Check Pods Manifest.lock */,
+				FADEDE172869C11E0008EC43 /* Sources */,
+				FADEDE182869C11E0008EC43 /* Frameworks */,
+				FADEDE192869C11E0008EC43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloWorld_KMM;
+			productName = HelloWorld_KMM;
+			productReference = FADEDE1B2869C11E0008EC43 /* HelloWorld_KMM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADEDE132869C11E0008EC43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FADEDE1A2869C11E0008EC43 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FADEDE162869C11E0008EC43 /* Build configuration list for PBXProject "HelloWorld_KMM" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADEDE122869C11E0008EC43;
+			productRefGroup = FADEDE1C2869C11E0008EC43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADEDE1A2869C11E0008EC43 /* HelloWorld_KMM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADEDE192869C11E0008EC43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADEDE262869C1200008EC43 /* Preview Assets.xcassets in Resources */,
+				FADEDE232869C1200008EC43 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B35CF3C841E9E7523B5AD68C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloWorld_KMM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADEDE172869C11E0008EC43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADEDE2F286A1C670008EC43 /* ContentViewModel.swift in Sources */,
+				FADEDE212869C11E0008EC43 /* ContentView.swift in Sources */,
+				FADEDE2D286A17E50008EC43 /* API.swift in Sources */,
+				FADEDE1F2869C11E0008EC43 /* HelloWorld_KMMApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FADEDE272869C1200008EC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FADEDE282869C1200008EC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FADEDE2A2869C1200008EC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5259F6B6D6E4B30E4246A889 /* Pods-HelloWorld_KMM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HelloWorld_KMM/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nanit.HelloWorld-KMM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADEDE2B2869C1200008EC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910283872D84F654D10DA0F4 /* Pods-HelloWorld_KMM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HelloWorld_KMM/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nanit.HelloWorld-KMM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADEDE162869C11E0008EC43 /* Build configuration list for PBXProject "HelloWorld_KMM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADEDE272869C1200008EC43 /* Debug */,
+				FADEDE282869C1200008EC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADEDE292869C1200008EC43 /* Build configuration list for PBXNativeTarget "HelloWorld_KMM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADEDE2A2869C1200008EC43 /* Debug */,
+				FADEDE2B2869C1200008EC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FADEDE132869C11E0008EC43 /* Project object */;
+}

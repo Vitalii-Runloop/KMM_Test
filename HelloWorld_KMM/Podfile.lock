@@ -1,0 +1,16 @@
+PODS:
+  - hello_world (1.0)
+
+DEPENDENCIES:
+  - hello_world (from `./../AndroidStudioProjects/HelloWorld/hello_world`)
+
+EXTERNAL SOURCES:
+  hello_world:
+    :path: "./../AndroidStudioProjects/HelloWorld/hello_world"
+
+SPEC CHECKSUMS:
+  hello_world: d8a8bb3331c65ef4c06eb0592ab269b6ac046ce9
+
+PODFILE CHECKSUM: d93744e3a93ce80e2c318f0c8e23e6e3e55988d5
+
+COCOAPODS: 1.11.2
