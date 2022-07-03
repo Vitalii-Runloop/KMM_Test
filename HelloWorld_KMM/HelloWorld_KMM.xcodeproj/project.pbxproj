@@ -12,7 +12,6 @@
 		FADEDE212869C11E0008EC43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDE202869C11E0008EC43 /* ContentView.swift */; };
 		FADEDE232869C1200008EC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADEDE222869C1200008EC43 /* Assets.xcassets */; };
 		FADEDE262869C1200008EC43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADEDE252869C1200008EC43 /* Preview Assets.xcassets */; };
-		FADEDE2D286A17E50008EC43 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDE2C286A17E50008EC43 /* API.swift */; };
 		FADEDE2F286A1C670008EC43 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDE2E286A1C670008EC43 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +24,6 @@
 		FADEDE202869C11E0008EC43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FADEDE222869C1200008EC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADEDE252869C1200008EC43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FADEDE2C286A17E50008EC43 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FADEDE2E286A1C670008EC43 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +80,6 @@
 				FADEDE1E2869C11E0008EC43 /* HelloWorld_KMMApp.swift */,
 				FADEDE202869C11E0008EC43 /* ContentView.swift */,
 				FADEDE2E286A1C670008EC43 /* ContentViewModel.swift */,
-				FADEDE2C286A17E50008EC43 /* API.swift */,
 				FADEDE222869C1200008EC43 /* Assets.xcassets */,
 				FADEDE242869C1200008EC43 /* Preview Content */,
 			);
@@ -108,6 +105,7 @@
 				FADEDE172869C11E0008EC43 /* Sources */,
 				FADEDE182869C11E0008EC43 /* Frameworks */,
 				FADEDE192869C11E0008EC43 /* Resources */,
+				1E6A62CBCBB78DA20332922E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +162,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1E6A62CBCBB78DA20332922E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld_KMM/Pods-HelloWorld_KMM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld_KMM/Pods-HelloWorld_KMM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorld_KMM/Pods-HelloWorld_KMM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B35CF3C841E9E7523B5AD68C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,7 +210,6 @@
 			files = (
 				FADEDE2F286A1C670008EC43 /* ContentViewModel.swift in Sources */,
 				FADEDE212869C11E0008EC43 /* ContentView.swift in Sources */,
-				FADEDE2D286A17E50008EC43 /* API.swift in Sources */,
 				FADEDE1F2869C11E0008EC43 /* HelloWorld_KMMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

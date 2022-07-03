@@ -1,8 +1,17 @@
 PODS:
   - hello_world (1.0)
+  - KMPNativeCoroutinesAsync (0.12.5):
+    - KMPNativeCoroutinesCore (= 0.12.5)
+  - KMPNativeCoroutinesCore (0.12.5)
 
 DEPENDENCIES:
   - hello_world (from `./../AndroidStudioProjects/HelloWorld/hello_world`)
+  - KMPNativeCoroutinesAsync (= 0.12.5)
+
+SPEC REPOS:
+  trunk:
+    - KMPNativeCoroutinesAsync
+    - KMPNativeCoroutinesCore
 
 EXTERNAL SOURCES:
   hello_world:
@@ -10,7 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   hello_world: d8a8bb3331c65ef4c06eb0592ab269b6ac046ce9
+  KMPNativeCoroutinesAsync: f8ab70cd9e9720188a0bba43b99b5f14a7d1a64a
+  KMPNativeCoroutinesCore: 36b0fda478802c81dee4673fcb489ccaa7e705f2
 
-PODFILE CHECKSUM: d93744e3a93ce80e2c318f0c8e23e6e3e55988d5
+PODFILE CHECKSUM: 5593f787367e15b24d311027fceedcf03112f822
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

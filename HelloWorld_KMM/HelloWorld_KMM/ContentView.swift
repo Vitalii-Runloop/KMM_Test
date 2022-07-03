@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import hello_world
 
 struct ContentView: View {
     @EnvironmentObject var viewModel: ContentViewModel
@@ -15,7 +14,7 @@ struct ContentView: View {
         NavigationView {
             
             VStack {
-                Text(Greeting().greeting())
+                Text(viewModel.greeting)
                     .padding()
                 
                 Text("""
@@ -27,9 +26,10 @@ struct ContentView: View {
             }
             .frame(alignment: .top)
             
-        }
-        .task {
-            await viewModel.loadPlaceholder()
+        }.onAppear {
+            viewModel.startMonitoring()
+        }.onDisappear {
+            viewModel.stopMonitoring()
         }
     }
 }

@@ -1,13 +1,18 @@
 package com.example.helloworld_kmm.ui.main
 
 import androidx.lifecycle.ViewModel
-import com.example.helloworld.TestAPI
+import com.example.helloworld.DataModels.PlaceholderResult
+import com.example.helloworld.Repository
+import kotlinx.coroutines.flow.StateFlow
 
 class MainViewModel : ViewModel() {
+    private val repository = Repository()
 
-    lateinit var placeholder: TestAPI.PlaceholderResult
+    val placeholder: StateFlow<PlaceholderResult?> =
+        repository.placeholder
 
-    suspend fun loadPlaceholder() {
-        placeholder = TestAPI().fetchPlaceholder()
+    init {
+        repository.startMonitoring()
     }
+
 }

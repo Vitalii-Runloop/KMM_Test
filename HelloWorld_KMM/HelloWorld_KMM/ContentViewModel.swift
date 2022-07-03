@@ -7,17 +7,36 @@
 
 import Foundation
 import hello_world
-import SwiftUI
+import KMPNativeCoroutinesAsync
 
+@MainActor
 final class ContentViewModel: ObservableObject {
-    @Published private(set) var placeholder: TestAPI.PlaceholderResult?
+    @Published private(set) var greeting: String = Greeting().greeting()
+    @Published private(set) var placeholder: PlaceholderResult?
+    
+    private var repository = Repository()
+    
+    private var task: Task<(), Never>? = nil
         
-    func loadPlaceholder() async {
-        let placeholder = try? await API().getPlaceholderAsync()
-        
-        DispatchQueue.main.sync {
-            self.placeholder = placeholder
+    func startMonitoring() {
+        task = Task { [weak self] in
+            repository.startMonitoring()
+            let stream = asyncStream(for: repository.placeholderSwift)
+            do {
+                for try await placeholder in stream {
+                    self?.placeholder = placeholder
+                }
+            } catch {
+                self?.placeholder = nil
+            }
+            self?.task = nil
         }
     }
     
+    func stopMonitoring() {
+        repository.stopMonitoring()
+        task?.cancel()
+        task = nil
+    }
+        
 }

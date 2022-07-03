@@ -1,17 +1,15 @@
 package com.example.helloworld
 
+import com.example.helloworld.DataModels.PlaceholderResult
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.request.*
 import io.ktor.serialization.kotlinx.json.*
-import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
+import kotlin.random.Random
 
-class TestAPI {
-    @Serializable
-    class PlaceholderResult(val id: Int, val userId: Int, val title: String, val completed: Boolean)
-
+internal class API {
     private val client: HttpClient = HttpClient() {
         install(ContentNegotiation) {
             json(Json {
@@ -23,5 +21,5 @@ class TestAPI {
 
     init {}
 
-    suspend fun fetchPlaceholder() = client.get("$baseUrl/todos/1").body<PlaceholderResult>()
+    suspend fun fetchPlaceholder() = client.get("$baseUrl/todos/" + Random.nextInt(0, 100).toString()).body<PlaceholderResult>()
 }

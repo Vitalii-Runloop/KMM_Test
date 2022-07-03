@@ -4,6 +4,8 @@ plugins {
     id("com.android.library")
 
     kotlin("plugin.serialization") version "1.7.0"
+
+    id("com.rickclephas.kmp.nativecoroutines") version "0.12.5"
 }
 
 version = "1.0"
@@ -34,18 +36,6 @@ kotlin {
                 implementation("io.ktor:ktor-client-core:$ktorVersion")
                 implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
-
-//                implementation(libs.ktor.logging)
-//                //Coroutines
-//                implementation(libs.kotlinx.coroutines.core)
-//                //Logger
-//                implementation(libs.napier)
-//                //JSON
-//                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
-//                //Key-Value storage
-//                implementation(libs.multiplatform.settings)
-//                // DI
-//                api("io.insert-koin:koin-core:3.2.0")
             }
         }
         val commonTest by getting {
@@ -90,4 +80,8 @@ android {
         minSdk = 26
         targetSdk = 32
     }
+}
+
+nativeCoroutines {
+    suffix = "Swift"
 }
