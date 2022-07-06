@@ -12,7 +12,15 @@ class MainViewModel : ViewModel() {
         repository.placeholder
 
     init {
+        startMonitoring()
+    }
+
+    fun startMonitoring() {
         repository.startMonitoring()
+    }
+
+    fun stopMonitoring() {
+        repository.stopMonitoring()
     }
 
 }
