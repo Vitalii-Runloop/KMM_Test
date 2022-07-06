@@ -22,7 +22,7 @@ internal class RemoteDataSource(
 
     fun startUpdating() {
         updating = true
-        GlobalScope.launch {
+        CoroutineScope(ioDispatcher).launch {
             while(updating) {
                 _placeholder.value = fetchData()
                 delay(1000) // Suspends the coroutine for some time

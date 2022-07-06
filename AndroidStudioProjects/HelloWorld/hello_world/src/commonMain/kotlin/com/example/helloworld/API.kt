@@ -21,5 +21,5 @@ internal class API {
 
     init {}
 
-    suspend fun fetchPlaceholder() = client.get("$baseUrl/todos/" + Random.nextInt(0, 100).toString()).body<PlaceholderResult>()
+    suspend fun fetchPlaceholder() = client.get("$baseUrl/todos/" + Random.nextInt(1, 100).toString()).body<PlaceholderResult>()
 }

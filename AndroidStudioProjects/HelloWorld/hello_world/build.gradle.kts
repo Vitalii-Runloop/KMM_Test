@@ -6,6 +6,7 @@ plugins {
     kotlin("plugin.serialization") version "1.7.0"
 
     id("com.rickclephas.kmp.nativecoroutines") version "0.12.5"
+    id("com.squareup.sqldelight")
 }
 
 version = "1.0"
@@ -29,6 +30,7 @@ kotlin {
     
     sourceSets {
         val ktorVersion = "2.0.2"
+        val sqldelightVersion = "1.5.3"
 
         val commonMain by getting {
             dependencies {
@@ -36,6 +38,8 @@ kotlin {
                 implementation("io.ktor:ktor-client-core:$ktorVersion")
                 implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+
+                implementation("com.squareup.sqldelight:coroutines-extensions:$sqldelightVersion")
             }
         }
         val commonTest by getting {
@@ -46,6 +50,7 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation("io.ktor:ktor-client-okhttp:$ktorVersion")
+                implementation("com.squareup.sqldelight:android-driver:$sqldelightVersion")
             }
         }
         val androidTest by getting
@@ -59,6 +64,7 @@ kotlin {
             iosSimulatorArm64Main.dependsOn(this)
             dependencies {
                 implementation("io.ktor:ktor-client-darwin:$ktorVersion")
+                implementation("com.squareup.sqldelight:native-driver:$sqldelightVersion")
             }
         }
         val iosX64Test by getting
@@ -84,4 +90,12 @@ android {
 
 nativeCoroutines {
     suffix = "Swift"
+}
+
+sqldelight {
+    database("HWDatabase") {
+        packageName = "com.example.helloworld"
+        verifyMigrations = true
+        linkSqlite = true
+    }
 }
