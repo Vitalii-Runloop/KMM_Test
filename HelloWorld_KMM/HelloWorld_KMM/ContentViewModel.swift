@@ -17,7 +17,7 @@ final class ContentViewModel: ObservableObject {
     private var repository = Repository()
     
     private var task: Task<(), Never>? = nil
-        
+    
     func startMonitoring() {
         task = Task { [weak self] in
             repository.startMonitoring()
@@ -38,5 +38,13 @@ final class ContentViewModel: ObservableObject {
         task?.cancel()
         task = nil
     }
-        
+    
+}
+
+final class ContentViewModel_Preview: ObservableObject {
+    @Published private(set) var greeting: String = "Hello, iOS"
+    @Published private(set) var placeholder: PlaceholderResult? = nil
+    
+    func startMonitoring() {}
+    func stopMonitoring() {}
 }

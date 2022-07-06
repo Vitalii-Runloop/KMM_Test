@@ -13,6 +13,10 @@
 		FADEDE232869C1200008EC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADEDE222869C1200008EC43 /* Assets.xcassets */; };
 		FADEDE262869C1200008EC43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADEDE252869C1200008EC43 /* Preview Assets.xcassets */; };
 		FADEDE2F286A1C670008EC43 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDE2E286A1C670008EC43 /* ContentViewModel.swift */; };
+		FADEDE312874AEE50008EC43 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDE302874AEE50008EC43 /* ListView.swift */; };
+		FADEDE332874AEEE0008EC43 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDE322874AEEE0008EC43 /* ListViewModel.swift */; };
+		FADEDE352874BE870008EC43 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FADEDE342874BE7D0008EC43 /* libsqlite3.tbd */; };
+		FADEDE382874C7330008EC43 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEDE372874C7330008EC43 /* NavigationLazyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		FADEDE222869C1200008EC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADEDE252869C1200008EC43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FADEDE2E286A1C670008EC43 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		FADEDE302874AEE50008EC43 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		FADEDE322874AEEE0008EC43 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		FADEDE342874BE7D0008EC43 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FADEDE372874C7330008EC43 /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADEDE352874BE870008EC43 /* libsqlite3.tbd in Frameworks */,
 				7C291E3805AF929CF985A2B0 /* Pods_HelloWorld_KMM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +60,7 @@
 		F6111B76BC2CEB5E000A7788 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FADEDE342874BE7D0008EC43 /* libsqlite3.tbd */,
 				89475FD148EED5E41235A7BB /* Pods_HelloWorld_KMM.framework */,
 			);
 			name = Frameworks;
@@ -77,9 +87,12 @@
 		FADEDE1D2869C11E0008EC43 /* HelloWorld_KMM */ = {
 			isa = PBXGroup;
 			children = (
+				FADEDE362874C71D0008EC43 /* Shared */,
 				FADEDE1E2869C11E0008EC43 /* HelloWorld_KMMApp.swift */,
 				FADEDE202869C11E0008EC43 /* ContentView.swift */,
 				FADEDE2E286A1C670008EC43 /* ContentViewModel.swift */,
+				FADEDE302874AEE50008EC43 /* ListView.swift */,
+				FADEDE322874AEEE0008EC43 /* ListViewModel.swift */,
 				FADEDE222869C1200008EC43 /* Assets.xcassets */,
 				FADEDE242869C1200008EC43 /* Preview Content */,
 			);
@@ -92,6 +105,14 @@
 				FADEDE252869C1200008EC43 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FADEDE362874C71D0008EC43 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FADEDE372874C7330008EC43 /* NavigationLazyView.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADEDE332874AEEE0008EC43 /* ListViewModel.swift in Sources */,
+				FADEDE312874AEE50008EC43 /* ListView.swift in Sources */,
+				FADEDE382874C7330008EC43 /* NavigationLazyView.swift in Sources */,
 				FADEDE2F286A1C670008EC43 /* ContentViewModel.swift in Sources */,
 				FADEDE212869C11E0008EC43 /* ContentView.swift in Sources */,
 				FADEDE1F2869C11E0008EC43 /* HelloWorld_KMMApp.swift in Sources */,

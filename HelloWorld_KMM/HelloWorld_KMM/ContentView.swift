@@ -23,10 +23,23 @@ struct ContentView: View {
         Title: \(viewModel.placeholder?.title ?? "N/A")
         Completed: \((viewModel.placeholder?.completed).map { String($0) } ?? "N/A")
         """)
+                
+                NavigationLink(destination: NavigationLazyView(ListView().environmentObject(ListViewModel()))) {
+                    Text("Placeholders List")
+                }
+                .padding()
+                .accentColor(Color.white)
+                .background(Color(red: 239 / 255, green: 123 / 255, blue: 123 / 255, opacity: 1))
+                .clipShape(Capsule())
+                .padding()
             }
-            .frame(alignment: .top)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
             
-        }.onAppear {
+        }
+        
+        .onAppear {
             viewModel.startMonitoring()
         }.onDisappear {
             viewModel.stopMonitoring()
@@ -36,6 +49,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environmentObject(ContentViewModel())
+        ContentView().environmentObject(ContentViewModel_Preview())
     }
 }
