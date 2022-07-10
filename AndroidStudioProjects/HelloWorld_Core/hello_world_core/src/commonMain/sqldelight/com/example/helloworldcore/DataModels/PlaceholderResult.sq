@@ -1,0 +1,26 @@
+import kotlin.Boolean;
+
+CREATE TABLE placeholderResultDb (
+  id INTEGER NOT NULL PRIMARY KEY,
+  userId INTEGER NOT NULL,
+  title TEXT NOT NULL,
+  completed INTEGER AS Boolean NOT NULL
+);
+
+selectAll:
+SELECT *
+FROM placeholderResultDb;
+
+insert:
+INSERT OR REPLACE INTO placeholderResultDb(id, userId, title, completed)
+VALUES (?, ?, ?, ?);
+
+insertResult:
+INSERT OR REPLACE INTO placeholderResultDb(id, userId, title, completed)
+VALUES ?;
+
+delete:
+DELETE FROM placeholderResultDb WHERE id=?;
+
+deleteAll:
+DELETE FROM placeholderResultDb;
